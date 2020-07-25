@@ -12,9 +12,9 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
   icons=[
-    {iconslink:'', iconsimg:'assets/Images/foot-fb.png', iconalt:'FB Icon'}, 
-    {iconslink:'', iconsimg:'assets/Images/foot-twit.png', iconalt:'Twiter Icon'}, 
-    {iconslink:'', iconsimg:'assets/Images/foot-insta.png', iconalt:'Inst Icon'}, 
-    {iconslink:'', iconsimg:'assets/Images/foot-yelp.png', iconalt:'Yelp Icon'}, 
+    {iconslink:'', iconsimg:'assets/Images/foot-fb.webp', iconalt:'FB Icon'}, 
+    {iconslink:'', iconsimg:'assets/Images/foot-twit.webp', iconalt:'Twiter Icon'}, 
+    {iconslink:'', iconsimg:'assets/Images/foot-insta.webp', iconalt:'Inst Icon'}, 
+    {iconslink:'', iconsimg:'assets/Images/foot-yelp.webp', iconalt:'Yelp Icon'}, 
   ]
 }

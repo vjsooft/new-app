@@ -8,7 +8,13 @@
         </div>
         <div class="certification col-lg-12 col-md-12 d-flex justify-content-center">
             <div class="cert-text col-lg-8 col-md-8 col-sm-12 col-xs-12 d-flex justify-content-center"> 
-                <div class="col-lg-4 col-sm-4 col-xs-12"><img src="assets/Images/platinum-logo.png" class="img-fluid" alt="platinum logo"></div>
+                <div class="col-lg-4 col-sm-4 col-xs-12">
+                    <picture>
+                        <source srcset="assets/Images/platinum-logo.webp" type="image/webp">
+                        <source srcset="assets/Images/platinum-logo.png" type="image/jpeg"> 
+                        <img src="assets/Images/platinum-logo.png" alt="platinum logo">
+                    </picture>
+                </div>
                 <div class="col-sm-8 col-sm-8 col-xs-12"><p>Owens Corning Platinum Preferred Contractor specializing in Roof, Siding, Gutters and more.</p></div> 
             </div>
         </div>
@@ -16,7 +22,11 @@
             <tabset class="abut-tab">
                 <tab heading="ROOFING" class="" (selectTab)="onSelect($event)">
                     <div class="col-sm-6 col-xs-6 pl-0 pr-0 float-left hide-lep">
-                        <img src="assets/Images/Roofing.jpeg" alt="roof image" class="img-fluid">
+                        <picture>
+                            <source srcset="assets/Images/Roofing.webp" type="image/webp">
+                            <source srcset="assets/Images/Roofing.jpeg" type="image/jpeg"> 
+                            <img src="assets/Images/Roofing.jpeg" alt="roof image" class="img-fluid">
+                        </picture>
                     </div>
                     <div class="col-lg-6 col-sm-12 col-xs-12 pl-0 pr-0 float-right text-white tabs-pad">
                         <h3>The Roofing Specialists</h3>
@@ -28,7 +38,13 @@
                         <h3>Insurance Claims Specialist</h3>
                         <p>For over a decade we have helped thousands of homeowners settle claims to ensure that any and all damaged property is properly covered and compensated by their insurance provider. We will meet with your insurance adjuster to closely examine your entire property ensuring that all damaged property is fully assessed so we can return the original safety and beauty of your property back to you. We have helped thousands of customers get their damages covered after they were either denied or not properly assessed by their insurance providers. You can trust that our trained professionals have the best training in the industry to help exceed your expectations. Our company prides itself on doing all of this, and doing it in a timely, professional manner.</p>
                     </div>
-                    <div class="col-sm-6 col-xs-6 pl-0 pr-0 float-right hide-lep"><img src="assets/Images/insurance-tab.png" alt="roof image" class="img-fluid"></div>
+                    <div class="col-sm-6 col-xs-6 pl-0 pr-0 float-right hide-lep">
+                        <picture>
+                            <source srcset="assets/Images/insurance-tab.webp" type="image/webp">
+                            <source srcset="assets/Images/insurance-tab.png" type="image/jpeg"> 
+                            <img src="assets/Images/insurance-tab.png" alt="roof image" class="img-fluid">
+                        </picture>
+                    </div>
                 </tab>
             </tabset>
         </div>

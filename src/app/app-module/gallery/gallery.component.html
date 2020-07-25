@@ -2,7 +2,13 @@
     <div class="container sec-t sec-b">
         <div class="row">
         <div class="col-sm-12 text-center">
-            <span class="tit-img gal-head-img"><img src="assets/Images/gallery-img.png" alt=""></span> 
+            <span class="tit-img gal-head-img">
+                <picture>
+                    <source srcset="assets/Images/gallery-img.webp" type="image/webp">
+                    <source srcset="assets/Images/gallery-img.png" type="image/jpeg"> 
+                    <img src="assets/Images/gallery-img.png" alt="Logo">
+                </picture>
+            </span> 
             <h2 class="text-center mt-4">{{galtit}}</h2>
             <hr>
         </div>

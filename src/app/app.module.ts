@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule} from '@angular/router';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './Share/header/header.component';
 import { FooterComponent } from './Share/footer/footer.component';
@@ -61,6 +61,7 @@ const appRoutes: Routes = [
     BrowserAnimationsModule,
     TabsModule.forRoot(),
     NgImageSliderModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,7 +5,11 @@
             <div class="container branch-address">
                 <div class="vol-icon">
                     <button (click)="toggleMute($event)" id="mute-icon" class="mute-icon">
-                        <img src="assets/Images/mute-icon.png" width="32">
+                        <picture>
+                            <source srcset="assets/Images/mute-icon.webp" type="image/webp">
+                            <source srcset="assets/Images/mute-icon.png" type="image/jpeg"> 
+                            <img src="assets/Images/mute-icon.png" alt="Logo" >
+                        </picture>
                     </button>
                 </div>
             </div>

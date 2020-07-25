@@ -1,8 +1,14 @@
-    <section id="contact">
+<section id="contact">
     <div class="container sec-t sec-b">
         <div class="row">
         <div class="col-sm-12 text-center">
-            <span class="tit-img gal-head-img"><img src="assets/Images/contact-img.png" alt=""></span> 
+            <span class="tit-img gal-head-img">
+                <picture>
+                    <source srcset="assets/Images/contact-img.webp" type="image/webp">
+                    <source srcset="assets/Images/contact-img.png" type="image/jpeg"> 
+                    <img src="assets/Images/contact-img.png" alt="Logo">
+                </picture>
+            </span> 
             <h2 class="text-center mt-4">{{contit}}</h2>
             <hr>
             <h3>Email us to schedule your Free estimate from the professionals at Singh Contracting Group</h3>
@@ -18,30 +24,30 @@
             </address>
         </div>
         <div class="col-sm-12">
-            <form class="contactForm">
+            <form class="contactForm" (ngSubmit)="onSubmit(myForm)" #myForm>
                 <div class="col-lg-6 col-sm-6 col-xs-12 float-left">
                     <div class="form-group d-flex">
-                        <label for="exampleInputEmail1">Name</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1">
-                        </div>
-                        <div class="form-group d-flex">
+                        <label for="exampleInputName">Name</label>
+                        <input type="text" class="form-control" id="exampleInputName">
+                    </div>
+                    <div class="form-group d-flex">
                         <label for="exampleInputEmail1">Email</label>
                         <input type="email" class="form-control" id="exampleInputEmail1">
-                        </div>
-                        <div class="form-group d-flex">
+                    </div>
+                    <div class="form-group d-flex">
                         <label for="exampleInputPhone">Phone</label>
                         <input type="text" class="form-control" id="exampleInputPhone">
-                        </div>
-                        <div class="form-group d-flex">
+                    </div>
+                    <div class="form-group d-flex">
                         <label for="exampleInputSubject">Subject</label>
                         <input type="text" class="form-control" id="exampleInputSubject">
-                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6 col-sm-6 col-xs-12 float-right">
                     <div class="form-group textare-d-flex">
-                        <label for="exampleInputMessage">Message</label>
+                        <label for="exampletextareaMessage">Message</label>
                         <textarea name="your-message" class="" placeholder="" 
-                        id="message" required="" minlength="5"
+                        id="exampletextareaMessage" required="" minlength="5"
                         data-validation-minlength-message="Min 5 characters"
                         maxlength="999"></textarea>
                         </div>

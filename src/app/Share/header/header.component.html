@@ -4,7 +4,13 @@
       <div class="col-sm-12">
           <nav class="navbar navbar-expand-lg navbar-dark fixed-top" [class.affix]="change_efect" id="mainNav">
             <div class="container pl-0 pr-0">
-                <a class="navbar-brand" href="#home"><img src="assets/Images/Singh_Contracting_Logo.png"></a>
+                <a class="navbar-brand" href="#home">
+                    <picture>
+                      <source srcset="assets/Images/Singh_Contracting_Logo.webp" type="image/webp">
+                      <source srcset="assets/Images/Singh_Contracting_Logo.png" type="image/jpeg"> 
+                      <img src="assets/Images/Singh_Contracting_Logo.png" alt="Logo" >
+                    </picture>
+                </a>
                 <div class="city-dropdown">
                   <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">Select a location<span class="caret"></span></a>
                     <ul class="dropdown-menu" id="location">
