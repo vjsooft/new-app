@@ -459,16 +459,19 @@ section#contact h3 {
 .float-clear{
   clear:both;
 }
-.cus-btn {
+.cus-btn, 
+.cus-btn:active {
   margin-top: 50px;
-  background: transparent;
-  border: 2px solid #f37d21;
-  border-radius: 30px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #f37d21;
-  padding: 10px 20px;
-  font-size: 14px;
+  background: transparent !important;
+  border: 2px solid #f37d21 !important;
+  border-radius: 30px !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+  color: #f37d21 !important;
+  padding: 10px 20px !important;
+  font-size: 14px !important;
+  text-align: center !important;
+  min-width: auto !important;
 }
 .cus-btn:hover {
   color: #f37d21;

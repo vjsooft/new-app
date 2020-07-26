@@ -29,7 +29,7 @@ export class ContactComponent implements OnInit {
       subject: ['', Validators.required],
       message: ['', Validators.required],
   },{
-    validator: MustMatch('fullname', 'emailid', 'subject', 'message' )
+    validator: MustMatch('fullname', 'emailid')
 });
   }
   
