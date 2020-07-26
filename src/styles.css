@@ -52,13 +52,14 @@ h3{
   padding-top:112px; 
 }
 .sec-b{
-  padding-bottom:112px; 
+  padding-bottom:79px; 
 }
 .invalid-feedback {
-  margin-top: .25rem;
-  font-size: 80%;
-  color: #dc3545;
   display: flex;
+  font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
+  font-size:14px;
+  line-height:20px;
+  position: absolute;
 }
 .titleone{
   color:#fff;
@@ -411,8 +412,12 @@ section#contact h3 {
   flex: 0 0 50%;
   max-width: 50%;
 }
-form.contactForm {
+.contactForm .contactForm {
   margin-bottom: 80px;
+}
+.form-group {
+  margin-bottom: 0;
+  position: relative;
 }
 .contactForm .form-group>.d-flex , 
 .textare-d-flex{
