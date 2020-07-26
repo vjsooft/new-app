@@ -12,4 +12,21 @@ export class BannerComponent implements OnInit {
   ngOnInit() {
   }
   title:string="Roofing Insurance claims specialists";
+  mutedStatus:any = '';
+  soundImg:string = 'mute-icon.png';
+
+
+
+  toggleMute(img) {
+    if (img == 'mute-icon.png') {
+      this.soundImg= 'unmute.png'
+      this.mutedStatus = false;
+  
+    }
+    else {
+      this.soundImg= 'mute-icon.webp'
+      this.mutedStatus = true;
+  
+    }
+}
 }

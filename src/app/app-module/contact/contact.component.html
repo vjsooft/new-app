@@ -24,23 +24,44 @@
             </address>
         </div>
         <div class="col-sm-12">
-            <form class="contactForm" (ngSubmit)="onSubmit(myForm)" #myForm>
+            <form class="contactForm" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
                 <div class="col-lg-6 col-sm-6 col-xs-12 float-left">
-                    <div class="form-group d-flex">
-                        <label for="exampleInputName">Name</label>
-                        <input type="text" class="form-control" id="exampleInputName">
+                    <div class="form-group">
+                        <div class="d-flex">
+                            <label for="exampleInputName">Name</label>
+                            <input type="text" class="form-control" 
+                            id="exampleInputName" formControlName="fullname" 
+                            [ngClass]="{ 'is-invalid': submitted && f.fullname.errors }" />
+                        </div>
+                        <div *ngIf="submitted && f.fullname.errors" class="invalid-feedback">
+                            <div *ngIf="f.fullname.errors.required">Please enter your name</div>
+                        </div>
                     </div>
                     <div class="form-group d-flex">
                         <label for="exampleInputEmail1">Email</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1">
+                        <input type="email" class="form-control" id="exampleInputEmail1" 
+                        formControlName='emailid' [ngClass]="{ 'is-invalid': submitted && f.emailid.errors }" />
+                        <div *ngIf="submitted && f.emailid.errors" class="invalid-feedback">
+                            <div *ngIf="f.emailid.errors.required">Please enter your email</div>
+                            <div *ngIf="f.emailid.errors.emailid">Email must be a valid email address</div>
+                        </div>
+                       
                     </div>
                     <div class="form-group d-flex">
                         <label for="exampleInputPhone">Phone</label>
-                        <input type="text" class="form-control" id="exampleInputPhone">
+                        <input type="text" class="form-control" id="exampleInputPhone"
+                        formControlName='phoneno' [ngClass]="{ 'is-invalid': submitted && f.phoneno.errors }"/>
+                        <div *ngIf="submitted && f.phoneno.errors" class="invalid-feedback">
+                            <div *ngIf="f.phoneno.errors.required">Please enter your Mobile Number</div>
+                        </div>
                     </div>
                     <div class="form-group d-flex">
                         <label for="exampleInputSubject">Subject</label>
-                        <input type="text" class="form-control" id="exampleInputSubject">
+                        <input type="text" class="form-control" id="exampleInputSubject" 
+                        formControlName='subject' [ngClass]="{ 'is-invalid': submitted && f.subject.errors }">
+                        <div *ngIf="submitted && f.subject.errors" class="invalid-feedback">
+                            <div *ngIf="f.subject.errors.required">Please enter your subject</div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-6 col-xs-12 float-right">
@@ -49,10 +70,14 @@
                         <textarea name="your-message" class="" placeholder="" 
                         id="exampletextareaMessage" required="" minlength="5"
                         data-validation-minlength-message="Min 5 characters"
-                        maxlength="999"></textarea>
+                        maxlength="999" formcontrolname='message' [ngClass]="{ 'is-invalid': submitted && f.message.errors }"></textarea>
+                        <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                            <div *ngIf="f.message.errors.required">Please enter your message</div>
+                        </div>
                         </div>
                 </div>
                 <div class="col-sm-12 float-clear text-center">
+                    
                     <button type="submit" class="btn btn-primary cus-btn">SEND MESSAGE</button>
                 </div>
             </form>
